@@ -296,11 +296,12 @@ row-gap:  3rem;
 .button{
     background-color: hsla(0, 0%, 100%, 0.565);
     padding: 1.25rem 1.5rem;
-    color: white;
+    color: black;
     display: inline-flex;
     align-items: center;
     column-gap: 0.5rem;
     font-family: var(--bodyfont);
+    font-weight: bolder;
     
 }
 .button i{
