@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=PT+Serif:ital,wght@1,400;1,700&family=Raleway&family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 /* font-family: 'Lily Script One', cursive;
 font-family: 'PT Serif', serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Stylish', sans-serif; */
 :root{
     /* -----colors----- */
-    --bodycolor:rgb(10, 9, 9);
+    --bodycolor:rgb(4, 4, 47);
     --titlecolor:rgb(252, 245, 245);
     --textcolor: rgba(246, 240, 240, 0.896);
     --textcolorlight:rgb(223, 214, 214);
@@ -48,7 +49,8 @@ html{
 }
 
 body,button,input{
-    font-family: var(--bodyfont);
+    /* font-family: var(--bodyfont); */
+    font-family: "Mulish", sans-serif;
     font-size: var(--normalsize);
     color: var(--textcolor);
 }
@@ -61,7 +63,7 @@ button,input{
 }
 h1,h2,h3,h4{
     color:var(--textcolor);
-    font-family: var(--secondfont);
+    font-family: "Mulish", sans-serif;
     font-weight: var(--font-medium);
 }
 ul{
@@ -88,7 +90,7 @@ img{
 }
 .grid{
     display: grid;
-    gap:1.5rem;
+    gap:1rem;
 
 }
 .section{
@@ -131,6 +133,9 @@ img{
     margin: auto;
    
     border-radius: 150px;
+}
+.navlink{
+    font-size: 1.5rem;
 }
 @media screen and (max-width:450px) 
 {
@@ -190,7 +195,7 @@ img{
         position: absolute;
         width: 1000%;
         height: 100%;
-        background-color: hsla(120, 3%, 24%, 0.93);
+        background-color: hsla(212, 91%, 25%, 0.93);
         backdrop-filter: blur(24px);
         -webkit-backdrop-filter: blur(24px);
         top: 0;
@@ -208,7 +213,7 @@ img{
     position: absolute;
     width: 1000%;
     height: 100%;
-    background-color: hsla(120, 3%, 24%, 0.93);
+    background-color: hsla(212, 80%, 17%, 0.93);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     top: 0;
@@ -251,18 +256,19 @@ row-gap:  3rem;
     text-align: center;
 }
 .homesubtitle{
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 0.5rem;
     color: var(--titlecolor);
 }
 .hometitle{
-    font-size: 3.2rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     color: var(--titlecolor);
 }
 .tagline{
     margin-bottom: 2rem;
     color: var(--titlecolor);
+    font-size: 1.5rem;
 }
 .socials{
     margin-top: 10px;
@@ -383,7 +389,7 @@ row-gap:  3rem;
 }
 .skill_container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -452,7 +458,7 @@ row-gap:  3rem;
 
 
 .skill_icon{
-    width: 90px;
+    width: 40px;
 }
 @media screen and (max-width:650px) {
     .skill_container{
@@ -471,7 +477,7 @@ row-gap:  3rem;
     padding-top: 1.5rem;
     grid-template-columns: 240px;
     justify-content: center;
-    row-gap: 2.5rem;
+    row-gap: 2rem;
 
 }
 .project-image{
@@ -539,7 +545,8 @@ row-gap:  3rem;
 }
 .contact_input{
     padding: 1.25rem 1rem;
-    background-color: var(--containercolor);
+    background-color: white;
+    color: black;
 }
 .contact_button{
     cursor: pointer;
@@ -644,7 +651,7 @@ row-gap:  3rem;
     .home-data{
         text-align: initial;
         width: 480px;
-        margin: 250px 133px;
+        margin: 250px 60px;
     }
     .homesubtitle{
         font-size: var(--h2);
@@ -692,8 +699,8 @@ row-gap:  3rem;
         margin-left: 40rem;
     }
     .project_container{
-        grid-template-columns: repeat(3,300px);
-        column-gap: 3rem;
+        grid-template-columns: repeat(2,300px);
+        column-gap: 10rem;
         padding-top: 4rem;
 
     }
@@ -717,6 +724,21 @@ row-gap:  3rem;
     }
     .navli li a{
         color: var(--titlecolor);
+    }
+    .lightning-shadow {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        /* background-image: url('your-image.jpg'); Replace with your image URL */
+        background-size: cover;
+        position: relative;
+        box-shadow: 
+                0 0 10px rgba(173, 216, 230, 0.5), /* Light Blue */
+                0 0 20px rgba(135, 206, 250, 0.5), /* Sky Blue */
+                0 0 30px rgba(0, 191, 255, 0.5),   /* Deep Sky Blue */
+                0 0 40px rgba(0, 0, 255, 0.5),     /* Blue */
+                0 0 50px rgba(0, 0, 139, 0.5),     /* Dark Blue */
+                0 0 60px rgba(25, 25, 112, 0.5);   /* Midnight Blue */
     }
 
 }
